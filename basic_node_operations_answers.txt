@@ -1,0 +1,96 @@
+1)
+A) Sort sorts lines in a file alphabetically. Output:
+
+break;
+       commandLibrary.cat(userInputArray.slice(1));
+      break;
+      commandLibrary.echo(userInputArray.slice(1).join(" "));
+      done(data);
+      if (err) throw err;
+     case "cat":
+    });
+    case "echo":
+    const fileName = fullPath[0];
+    done(userInput);
+    fs.readFile(fileName, (err, data) => {
+    process.stdout.write('\nprompt > ');
+    process.stdout.write(output);
+  "cat": function(fullPath) {
+  "echo": function(userInput) {
+  }
+  }
+  },
+  const command = userInputArray[0];
+  const userInputArray = userInput.split(" ");
+  switch (command) {
+}
+}
+};
+const commandLibrary = {
+function done(output) {
+function evaluateCmd(userInput) {
+module.exports.commandLibrary = commandLibrary;
+module.exports.evaluateCmd = evaluateCmd;
+
+B) WC prints newline, word, and byte counts (in addition to file name) for a file. Output:
+
+43  79 959 commands.js
+
+C) Uniq sorts each line in a file and only returns different lines. (Duplicate lines are removed from the output). Output:
+
+const fs = require("fs");
+
+ function done(output) {
+     process.stdout.write(output);
+     process.stdout.write('\nprompt > ');
+ }
+
+ function evaluateCmd(userInput) {
+
+   const userInputArray = userInput.split(" ");
+   const command = userInputArray[0];
+
+   switch (command) {
+     case "echo":
+       commandLibrary.echo(userInputArray.slice(1).join(" "));
+       break;
+      case "cat":
+        commandLibrary.cat(userInputArray.slice(1));
+        break;
+   }
+ }
+
+ const commandLibrary = {
+   "echo": function(userInput) {
+     done(userInput);
+   },
+   "cat": function(fullPath) {
+     const fileName = fullPath[0];
+     fs.readFile(fileName, (err, data) => {
+       if (err) throw err;
+       done(data);
+     });
+   }
+ };
+
+ module.exports.commandLibrary = commandLibrary;
+ module.exports.evaluateCmd = evaluateCmd;
+
+module.exports.commandLibrary = commandLibrary;
+module.exports.evaluateCmd = evaluateCmd;
+
+2) uniq commands.js | wc
+     40      79     953
+This command output the number of newline, word, and byte counts of the unique lines of command.js by combining the two commands (uniq and wc)
+
+6) Reverse String challenge
+const reverseString = (string) => {
+    let splitString = string.split("");
+    let reversed = [];
+    splitString.forEach((element) => {
+        reversed.push(element);
+    });
+    reversed.reverse();
+    let reversedString = reversed.join("");
+    return reversedString;
+}

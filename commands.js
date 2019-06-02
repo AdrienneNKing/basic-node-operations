@@ -75,6 +75,3 @@ const fs = require("fs");
 
  module.exports.commandLibrary = commandLibrary;
  module.exports.evaluateCmd = evaluateCmd;
-
-module.exports.commandLibrary = commandLibrary;
-module.exports.evaluateCmd = evaluateCmd;
